@@ -3,8 +3,22 @@
             <head>
                 <title>Solar System</title>
                 <style>
+                    @keyframes table {
+                        0%{opacity: 0;}
+                        25%{opacity: 0.25;}
+                        50%{opacity: 0.5;}
+                        75%{opacity: 0.75;}
+                        100%{opacity: 1;}
+                    }
                     table,th,td {
                         border: 2px solid black;
+                        animation: table 3s;
+                    }
+                    img{
+                        animation: table 3s;
+                    }
+                    p:hover{
+                       font: 1em sans-serif; ;
                     }
                 </style>
             </head>

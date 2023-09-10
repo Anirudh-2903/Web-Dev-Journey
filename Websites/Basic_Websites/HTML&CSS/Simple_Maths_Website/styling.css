@@ -1,44 +1,60 @@
 /*styling.css*/
 body{
     font: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    box-sizing: border-box;
 }
 
 #container {
-    width: 1050px;
-/*    border: 1px solid grey;*/
+    width: 90%;
+    /*    border: 1px solid grey;*/
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
 #header{
-    height: 100px;
+    /*    height: 100px;*/
     padding: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #brand{
-    float: left;
+    /*    float: left;   */
+    flex: 50%;
 }
 
 h1 a{
-    font-size: 50px;
+    font-size: 50px; 
     font-weight: 100;
-    color: #6ec6dc;
+    color: #861BBF;
     text-decoration: none;
 }
 
 #searchBox{
-    float: right;
-    background: linear-gradient(#9f8ad4, #2d1a8a);
-    background: -webkit-linear-gradient(#9f8ad4, #2d1a8a);
-    background: -o-linear-gradient(#9f8ad4, #2d1a8a);
-    background: -moz-linear-gradient(#9f8ad4, #2d1a8a);
-    width: 400px;
-    height: 50px;
-    padding: 20px 20px 0 20px;
-    margin-top: 20px;
+    /*    float: right;*/
+    flex: 50%;
+    background: linear-gradient(#E4F2B9, #B7E953);
+    background: -webkit-linear-gradient(#E4F2B9, #B7E953);
+    background: -o-linear-gradient(#E4F2B9, #B7E953);
+    background: -moz-linear-gradient(#E4F2B9, #B7E953);
+    min-width: 400px;
+    /*    height: 50px;*/
+    padding: 20px;
+    /*    margin-top: 20px;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .text{
-    float: left;
+    float: left; 
     width: 200px;
     padding: 5px;
     font-size: 15px;
@@ -58,33 +74,33 @@ h1 a{
 }
 
 .clear{
-    clear: both;
+    clear: both;   
 }
 
 #menu{
-    height: 70px;
-    background: linear-gradient(#4ad8e8, #278bd8);
-    background: -webkit-linear-gradient(#4ad8e8, #278bd8);
-    background: -o-linear-gradient(#4ad8e8, #278bd8);
-    background: -moz-linear-gradient(#4ad8e8, #278bd8);
-    padding: 7px 0;
-}
-ul{
-    list-style: none;
+/*    height: 150px;*/
+    background: linear-gradient(#F8F594, #D5D533);
+    background: -webkit-linear-gradient(#F8F594, #D5D533);
+    background: -o-linear-gradient(#F8F594, #D5D533);
+    background: -moz-linear-gradient(#F8F594, #D5D533);
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-#menu ul li{
-    float: left;
+
+#menu a{
+    /*    float: left;*/
     padding: 0 30px;
     height: 30px;
     border-right: 1px solid #5d12e7;
 }
 
-#menu ul li:last-child{
-    border-right: none;
+#menu a:last-child{
+    border-right: none;   
 }
 
-#menu ul li a{
+#menu a{
     text-decoration: none;
     text-transform: uppercase;
     font-size: 17px;
@@ -97,17 +113,27 @@ ul{
     transition: font-size 0.3s ease;
 }
 
-#menu ul li a:hover, #menu ul li a.active{
+#menu a:hover, #menu a.active{
     font-size: 20px;
     font-weight: bold;
     color: #B314DB;
 }
+/*small screens: vertical menu*/
+@media screen and (max-width: 700px){
+    #menu{
+        flex-direction: column;
+        align-content: center;
+    }
+    #menu a{
+        border-right: none;
+    }
+}
 
 #introduction{
-    background: linear-gradient(#E5F2BB, #B7E952);
-    background: -webkit-linear-gradient(#E5F2BB, #B7E952);
-    background: -o-linear-gradient(#E5F2BB, #B7E952);
-    background: -moz-linear-gradient(#E5F2BB, #B7E952);
+    background: linear-gradient(#E5F2BB, #B7E952); 
+    background: -webkit-linear-gradient(#E5F2BB, #B7E952); 
+    background: -o-linear-gradient(#E5F2BB, #B7E952); 
+    background: -moz-linear-gradient(#E5F2BB, #B7E952); 
     padding: 30px;
     margin: 16px 0;
 }
@@ -119,17 +145,27 @@ ul{
 }
 
 #introduction p{
-    font-size: 25px;
+    font-size: 25px; 
     color: #628F19;
     text-align: justify;
 }
 
+/*sidebars*/
+.sidebars{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sidebarWrapper{
+    padding: 5px;
+    flex: 50%;
+}
 .sidebar{
-    height: 500px;
-    width: 450px;
+    height: 100%;
+    width: 100%;
     border: 1px solid #BAF46F;
     border-radius: 20px;
     padding: 10px 30px;
+/*    flex: 50%;*/
 }
 
 .sidebar h3{
@@ -138,7 +174,7 @@ ul{
 }
 
 .sidebar ul{
-    padding-top: 8px;
+    padding-top: 8px;   
 }
 #leftsidebar ul li{
     padding: 4px 0 4px 10px;
@@ -168,13 +204,15 @@ ul{
 }
 
 
+/*
 #leftsidebar{
-    float: left;
+    float: left;   
 }
 
 #rightsidebar{
     float: right;
 }
+*/
 
 .footer{
     height: 60px;
@@ -183,5 +221,5 @@ ul{
     background: -o-linear-gradient(#F6F390, #D5D533);
     background: -moz-linear-gradient(#F6F390, #D5D533);
     padding: 10px 30px;
-    margin-top: 15px
+    margin-top: auto;
 }

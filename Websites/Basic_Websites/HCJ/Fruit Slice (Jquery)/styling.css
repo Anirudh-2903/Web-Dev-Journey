@@ -7,17 +7,26 @@ html{
     background: -moz-radial-gradient(circle, #fff, #ccc);
 }
 
+#title{
+    position: absolute;
+    left: 315px;
+    padding: 10px;
+    font-size:xx-large;
+    color: #780d88;
+
+}
+
 #container{
     height: 600px;
     width: 750px;
     background-color: #9DD2EA;
-    margin: 10px auto;
+    margin: 20px auto;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 0px 0px #009de4;
     -moz-box-shadow: 0px 4px 0px 0px #009de4;
     -webkit-box-shadow: 0px 4px 0px 0px #009de4;
-/*        box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color]*/
+    box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color];
     position: relative;
 }
 
@@ -53,7 +62,7 @@ html{
 #fruitsContainer{
     width: 650px;
     height: 400px;
-    margin: 50px auto 10px auto;
+    margin: 60px auto 10px auto;
     background-color: white;
     box-shadow: 0px 4px #535aa8;
     -moz-box-shadow: 0px 4px #535aa8;
@@ -70,7 +79,7 @@ html{
     width: 450px;
     height: 50px;
     background-color: #B481D9;
-    margin: 10px auto;
+    margin: 20px auto;
     text-align: center;
     line-height: 45px;
     box-shadow: 0px 4px #8153a8;
@@ -129,7 +138,7 @@ html{
     width: 78px;
     padding: 10px;
     background-color: rgba(255,255,255,0.5);
-    margin: 0 auto;
+    margin: 10px auto;
     border-radius: 3px;
     cursor: pointer;
     box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
@@ -145,16 +154,17 @@ html{
 }
 
 #trialsLeft{
-    width: 80px;
-    padding: 10px;
+    width: 110px;
+    padding: 8px;
     position: absolute;
+    margin-top: 10px;
     background-color: #F1FF92;
     border-radius: 3px;
     box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
     -webkit-box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
-/*    visibility: hidden;*/
     display: none;
+    align-content: center;
 }
 
 #gameOver{

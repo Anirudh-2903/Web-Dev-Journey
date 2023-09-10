@@ -4,7 +4,7 @@ var score;
 var trialsLeft;
 var step;
 var action; //used for setInterval
-var fruits = ['apple', 'banana', 'cherries', 'grapes', 'mango', 'orange', 'peach', 'pear', 'watermelon','bomb'];
+var fruits = ['apple', 'banana', 'cherries', 'grapes', 'mango', 'orange', 'peach', 'pear', 'watermelon'];
 $(function(){
 
 //click on start reset button
@@ -58,6 +58,7 @@ $("#fruit1").mouseover(function(){
 
     //send new fruit
     setTimeout(startAction, 800);
+
 });
 
 //functions
@@ -81,16 +82,23 @@ function startAction(){
     $("#fruit1").css({'left' : Math.round(550*Math.random()), 'top' : -50}); //random position
 
     //generate a random step
-    step = 1+ Math.round(5*Math.random()); // change step
+    step = 1+ Math.round(5*Math.random());
+    side = 1+Math.round(Math.random());// change step
 
     // Move fruit down by one step every 10ms
     action = setInterval(function(){
 
         //move fruit by one step
         $("#fruit1").css('top', $("#fruit1").position().top + step);
+        if(side==1){
+        $("#fruit1").css('left', $("#fruit1").position().left + step);
+        }
+        else{
+            $("#fruit1").css('left', $("#fruit1").position().left - step);
+        }
 
         //check if the fruit is too low
-        if($("#fruit1").position().top > $("#fruitsContainer").height()){
+        if($("#fruit1").position().top > $("#fruitsContainer").height() ){
             //check if we have trials left
             if(trialsLeft > 1 ){
                 //generate a fruit
@@ -122,7 +130,7 @@ function startAction(){
 // generate a random fruit
 
 function chooseFruit(){
-    $("#fruit1").attr('src' , 'images/' + fruits[Math.round(9*Math.random())] +'.png');
+    $("#fruit1").attr('src' , 'images/' + fruits[Math.round(8*Math.random())] +'.png');
 }
 
 //Stop dropping fruits

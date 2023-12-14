@@ -1,109 +1,13 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anirudh Das - Full Stack Developer</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
-</head>
-<body class="font-sans bg-gray-100">
-
-    <!-- Navigation -->
-    <nav class="bg-blue-500 p-4">
-        <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-white text-2xl font-semibold">Anirudh Das</h1>
-            <ul class="flex space-x-4">
-                <li><a href="#about" class="text-white">About</a></li>
-                <li><a href="#projects" class="text-white">Projects</a></li>
-                <li><a href="#contact" class="text-white">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Main Content -->
-    <div class="container mx-auto my-8">
-
-        <!-- About Me Section -->
-        <section id="about" class="mb-8">
-            <h2 class="text-3xl font-semibold mb-4">About Me</h2>
-            <p class="text-gray-800">
-                I am a passionate full-stack developer with 2 years of experience in HTML, Tailwind CSS, and JavaScript.
-                (Add more details about yourself here.)
-            </p>
-        </section>
-
-        <!-- Project Sections -->
-        <section id="projects" class="mb-8">
-            <h2 class="text-3xl font-semibold mb-4">Projects</h2>
-
-            <!-- Project 1 -->
-            <div class="mb-4">
-                <h3 class="text-xl font-semibold mb-2">Project 1 Title</h3>
-                <p class="text-gray-800">
-                    Description of Project 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-            </div>
-
-            <!-- Project 2 -->
-            <div class="mb-4">
-                <h3 class="text-xl font-semibold mb-2">Project 2 Title</h3>
-                <p class="text-gray-800">
-                    Description of Project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-            </div>
-
-            <!-- Project 3 -->
-            <div class="mb-4">
-                <h3 class="text-xl font-semibold mb-2">Project 3 Title</h3>
-                <p class="text-gray-800">
-                    Description of Project 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-            </div>
-
-            <!-- Project 4 -->
-            <div class="mb-4">
-                <h3 class="text-xl font-semibold mb-2">Project 4 Title</h3>
-                <p class="text-gray-800">
-                    Description of Project 4. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-            </div>
-        </section>
-
-        <!-- Contact Me Section -->
-        <section id="contact" class="mb-8">
-            <h2 class="text-3xl font-semibold mb-4">Contact Me</h2>
-            <form id="contactForm" class="max-w-md">
-                <div class="mb-4">
-                    <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name</label>
-                    <input type="text" id="name" name="name" class="w-full border p-2 rounded focus:outline-none focus:border-blue-500">
-                </div>
-                <div class="mb-4">
-                    <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email</label>
-                    <input type="email" id="email" name="email" class="w-full border p-2 rounded focus:outline-none focus:border-blue-500">
-                </div>
-                <div class="mb-4">
-                    <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message</label>
-                    <textarea id="message" name="message" rows="4" class="w-full border p-2 rounded focus:outline-none focus:border-blue-500"></textarea>
-                </div>
-                <button type="submit" class="bg-blue-500 text-white p-2 rounded hover:bg-blue-700">Send Message</button>
-            </form>
-        </section>
-
-    </div>
-
-    <!-- Footer -->
-    <footer class="bg-blue-500 p-4 mt-8">
-        <p class="text-white text-center">&copy; 2023 Anirudh Das - Full Stack Developer</p>
-    </footer>
-
-    <!-- JavaScript for Form Submission (You can add your own logic here) -->
-    <script>
-        document.getElementById('contactForm').addEventListener('submit', function (event) {
-            event.preventDefault();
-            // Add your form submission logic here
-        });
-    </script>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/src/assets/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anirudh Das | Portfolio</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
